@@ -1,0 +1,12 @@
+<h2>Todas las mascotas</h2>
+<button (click)='getMascotas()'>AllPets</button>
+<ul>
+    <li *ngFor="let mascotas of mascota" >
+      -- id: {{mascotas.id}}
+      -- name: {{mascotas.name}}
+      -- mezcla: {{mascotas.mezcla}}
+      -- especie: {{mascotas.especie}}
+      -- venta:{{mascotas.venta}}
+      -- edad:{{mascotas.edad}}
+    </li>
+  </ul> 

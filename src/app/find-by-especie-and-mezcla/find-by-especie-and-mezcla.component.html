@@ -1,0 +1,15 @@
+<h1>Buscar por Especie y Mezcla</h1>
+<P>Especie: <input #Especie> <br />
+  Mezcla: <input #Mezcla> 
+</P>
+<button (click)='getEspecieAndMezcla(Especie.value,Mezcla.value)'>FindByEspecieAndMezcla</button>
+<ul>
+  <li *ngFor='let m of mascota'>
+      -- id: {{m.id}}
+      -- name: {{m.name}}
+      -- mezcla: {{m.mezcla}}
+      -- especie: {{m.especie}}
+      -- venta:{{m.venta}}
+      -- edad:{{m.edad}}
+  </li>
+</ul>

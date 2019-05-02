@@ -1,0 +1,13 @@
+<h2>Encontrar mascota por nombre</h2>
+<input #nombreMascota>
+<button (click)='getMascotaByName(nombreMascota.value)'>getByName</button>
+  <ul>
+      <li *ngFor = 'let mascota of mascotaNombre'>
+          -- id: {{mascota.id}} <br/>
+          -- name: {{mascota.name}} <br/>
+          -- mezcla: {{mascota.mezcla}} 
+          -- especie: {{mascota.especie}}<br/> 
+          -- venta:{{mascota.venta}}<br/>
+          -- edad:{{mascota.edad}}<br/>
+      </li>
+  </ul>
